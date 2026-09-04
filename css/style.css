@@ -1,104 +1,122 @@
-* {margin: 0;
-box-sizing: border-box;
-/*los bordes no son agregados al ancho y largo, son restados*/
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body {
-
-color: #f4f0ff;
-background-color: #391211;
+header {
+  background-color: #060606;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 20vh;
+  padding: 20px;
+  color: rgb(225, 221, 216);
 }
 
-
-header{
-background-color: #060606;
-width: 100%;
-margin-bottom: 10px;
-height: 20vh;
-padding: 20px;
-color: rgb(225, 221, 216)
+h1 {
+  margin-bottom: 20px;
 }
 
-h1{ margin-bottom: 20px;
-}
-
-h2{ padding: 10px;
+h2 {
+  padding: 15px;
+  margin-top: 50px;
+  color: #ffffff;
 }
 
 h1,
-h3 { color: #b8292a;
+h3 {
+  color: #b8292a;
 }
 
-h2 {color:#ffffff
+body {
+  color: #f4f0ff;
+  background-color: #602820;
 }
 
-main{ width: 90%;
-margin: auto;
+main {
+  width: 90%;
+  margin: auto;
 }
 
 section {
-    color: #060606;
-    width: 98%;
-    background-color: #b39f8c;
+  color: #000000;
+  width: 98%;
+  background-color: #8e544a;
 }
 
-section p {margin: 10px;
-    padding: 15px;    
+section p {
+  margin: 10px;
+  padding: 15px;
 }
-
 
 div {
-padding: 10px;
-background-color: #ffffff;
-width: 98%;
-height: 15vh;
-margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  width: 95%;
+  margin: 30px;
 }
 
 .activities {
-    background-color: #7b2c20;
+  background-color: #000000;
 }
 
-.activities p {
-    color: #ffffff;
+.activities div h2,
+#tips h2 {
+  color: #000000;
 }
 
 .activities ul {
-margin: 10px; 
-padding: 50px;  
-color: #ffffff;
+  margin-inline-start: 10px;
+  padding: 25px;
+  color: #8e544a;
 }
 
-.information h3 ~ p {
-    color: blue;
+.activities p {
+  color: #ffffff;
 }
 
-.information h3 + p {
-color: red;
+.activities div p {
+  color: #000000;
+  padding: 5px;
 }
 
-iframe { 
-    
-    width: 98%;
-    height: 250px;
-    padding: 20px;
+.activities div h2 {
+  margin-top: 10px;
 }
 
-section:has(iframe){
-/*this affects a section for having
-an iframe inside*/
-
- height: 400px;
-    background-color: #000000;
-
+#tips {
+  background-color: #ffffff;
 }
 
-section:has(iframe) p{
-    color: #ffffff;
+#tips h2 + p {
+  color: #b8292a;
+}
+
+#tips h2 ~ div {
+  color: #8e544a;
+}
+
+#tips div {
+  margin: 0px;
+  padding: 30px;
+}
+
+iframe {
+  width: 98%;
+  height: 250px;
+  padding: 20px;
+}
+
+section:has(iframe) {
+  height: 400px;
+  background-color: #000000;
+}
+
+section:has(iframe) p {
+  color: #ffffff;
 }
 
 footer {
-    margin: 40px;
-    background-color: #b8292a;
-    padding: 5px;
+  margin: 40px;
+  background-color: #b8292a;
+  padding: 5px;
 }
