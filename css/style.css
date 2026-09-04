@@ -1,0 +1,104 @@
+* {margin: 0;
+box-sizing: border-box;
+/*los bordes no son agregados al ancho y largo, son restados*/
+}
+
+body {
+
+color: #f4f0ff;
+background-color: #391211;
+}
+
+
+header{
+background-color: #060606;
+width: 100%;
+margin-bottom: 10px;
+height: 20vh;
+padding: 20px;
+color: rgb(225, 221, 216)
+}
+
+h1{ margin-bottom: 20px;
+}
+
+h2{ padding: 10px;
+}
+
+h1,
+h3 { color: #b8292a;
+}
+
+h2 {color:#ffffff
+}
+
+main{ width: 90%;
+margin: auto;
+}
+
+section {
+    color: #060606;
+    width: 98%;
+    background-color: #b39f8c;
+}
+
+section p {margin: 10px;
+    padding: 15px;    
+}
+
+
+div {
+padding: 10px;
+background-color: #ffffff;
+width: 98%;
+height: 15vh;
+margin-bottom: 10px;
+}
+
+.activities {
+    background-color: #7b2c20;
+}
+
+.activities p {
+    color: #ffffff;
+}
+
+.activities ul {
+margin: 10px; 
+padding: 50px;  
+color: #ffffff;
+}
+
+.information h3 ~ p {
+    color: blue;
+}
+
+.information h3 + p {
+color: red;
+}
+
+iframe { 
+    
+    width: 98%;
+    height: 250px;
+    padding: 20px;
+}
+
+section:has(iframe){
+/*this affects a section for having
+an iframe inside*/
+
+ height: 400px;
+    background-color: #000000;
+
+}
+
+section:has(iframe) p{
+    color: #ffffff;
+}
+
+footer {
+    margin: 40px;
+    background-color: #b8292a;
+    padding: 5px;
+}
